@@ -85,3 +85,5 @@ lombok.config
 # Coverage
 coverage/
 jacoco.exec
+
+draft
