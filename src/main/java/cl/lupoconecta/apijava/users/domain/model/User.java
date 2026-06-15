@@ -1,0 +1,53 @@
+package cl.lupoconecta.apijava.users.domain.model;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+
+/**
+   * Definicion del modelo de dominio de User
+   * Mapea la colección `users` en Mongo.   
+   * Define los campos id, name, email y los constructores necesarios.
+   */
+@Document(collection = "users")
+public class User {
+    @Id
+    private String id;
+
+    private String name;
+    private String email;
+
+    public User() {
+    }
+
+    public User(String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+}
