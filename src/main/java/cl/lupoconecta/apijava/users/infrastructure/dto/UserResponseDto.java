@@ -10,7 +10,7 @@ public class UserResponseDto {
         this.name = name;
         this.email = email;
     }
-    
+
     public String getId() {
         return id;
     }
