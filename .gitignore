@@ -87,3 +87,5 @@ coverage/
 jacoco.exec
 
 draft
+# graphify-axet
+.graphify/

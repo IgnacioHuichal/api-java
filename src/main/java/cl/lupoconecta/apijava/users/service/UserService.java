@@ -1,7 +1,8 @@
-package cl.lupoconecta.apijava.users.application.service;
+package cl.lupoconecta.apijava.users.service;
 
-import cl.lupoconecta.apijava.users.domain.model.User;
-import cl.lupoconecta.apijava.users.domain.port.UserRepository;
+import cl.lupoconecta.apijava.users.model.User;
+import cl.lupoconecta.apijava.users.repository.SpringDataUserRepository;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,9 +17,9 @@ import java.util.Optional;
    */
 @Service
 public class UserService {
-    private final UserRepository userRepository;
+    private final SpringDataUserRepository userRepository;
 
-    public UserService(UserRepository userRepository) {
+    public UserService(SpringDataUserRepository userRepository) {
         this.userRepository = userRepository;
     }
 

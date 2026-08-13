@@ -1,7 +1,8 @@
-package cl.lupoconecta.apijava.users.infrastructure.repository;
+package cl.lupoconecta.apijava.users.repository;
 
-import cl.lupoconecta.apijava.users.domain.model.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
+
+import cl.lupoconecta.apijava.users.model.User;
 /**
    * Extiende `MongoRepository<User, String>`
    * Esto le da acceso a métodos CRUD básicos sin necesidad de implementarlos.

@@ -1,4 +1,4 @@
-package cl.lupoconecta.apijava.users.infrastructure.dto;
+package cl.lupoconecta.apijava.users.dto;
 
 public class UserResponseDto {
     private String id;

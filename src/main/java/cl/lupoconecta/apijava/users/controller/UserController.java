@@ -1,9 +1,9 @@
-package cl.lupoconecta.apijava.users.infrastructure.controller;
+package cl.lupoconecta.apijava.users.controller;
 
-import cl.lupoconecta.apijava.users.application.service.UserService;
-import cl.lupoconecta.apijava.users.domain.model.User;
-import cl.lupoconecta.apijava.users.infrastructure.dto.UserRequestDto;
-import cl.lupoconecta.apijava.users.infrastructure.dto.UserResponseDto;
+import cl.lupoconecta.apijava.users.dto.UserRequestDto;
+import cl.lupoconecta.apijava.users.dto.UserResponseDto;
+import cl.lupoconecta.apijava.users.model.User;
+import cl.lupoconecta.apijava.users.service.UserService;
 
 import org.springframework.web.bind.annotation.*;
 import jakarta.validation.Valid;
